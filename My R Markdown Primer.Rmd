@@ -1,0 +1,37 @@
+---
+title: "My R Markdown Primer"
+author: "metadata"
+date: "2025-11-13"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+R Markdown provides an authoring framework for data science. R Markdown a way to generate and save your code and thoughts into a high quality report that can be saved in different formats such as HTML, PDF, and MS Word documents that can be saved and shared.Once the code is finished being written in R Markdown you Knit it to compile the file.
+
+$\\alpha + \\beta = \\gamma$
+
+$$ e= mc^2 $$
+# Include 2 executable R chunks
+
+Adding in the ggplot library and the head of mtcars dataset.
+
+```{r}
+library(ggplot2)
+head(mtcars)
+```
+
+## Including Plots
+
+Adding in ggplot as an executable as instructed in the instructions.
+
+```{r}
+ggplot(mtcars, aes(wt,mpg, color=cyl))+geom_point()
+```
+
+
+I have used RMarkdown in my Text/Data Mining Class so I am pretty familiar with using it. I did learn how to actually now create an R Markdown as usually the file is already created and given to us and we download and fill in the code chunks or answer questions. I think this is really helpful and helps show the code in a more professional look rather than screenshots and unstructured paragraphs. It also helps that it shows where exactly there is problems in your code as well when generating code. It also is cool that when you use the hashtag it creates a larger font like a title or subheading. 
